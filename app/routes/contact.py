@@ -17,4 +17,4 @@ def submit_contact():
     # You can save this data to a database or send it as an email
     print(f"Name: {name}, Email: {email}, Message: {message}")
 
-    return jsonify({"message": "Thank you for contacting us. We'll get back to you soon.", "success": True})
+    return '', 204
