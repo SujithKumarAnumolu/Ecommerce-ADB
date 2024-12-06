@@ -7,85 +7,89 @@
     <title>E-commerce Landing Page</title>
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <style>
-        /* General Reset and Layout */
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Lato', sans-serif;
-        }
+<style>
+    /* General Reset and Layout */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+    }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100%;
-        }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
 
-        main {
-            flex: 1; /* Pushes footer to the bottom if content is short */
-        }
+    main {
+        flex: 1; /* Pushes footer to the bottom if content is short */
+    }
 
-        /* Hero Section Styling */
-        #header-hero {
-            position: relative;
-            background: #f9f9f9;
-            padding: 2rem 1rem;
-            text-align: center;
-            z-index: 1;
-        }
+    /* Hero Section Styling */
+    #header-hero {
+        position: relative;
+        background: #f9f9f9;
+        padding: 2rem 1rem;
+        text-align: center;
+        z-index: 1;
+    }
 
-        .header-bg img {
-            width: 100%;
-            height: auto;
-        }
+    .header-bg img {
+        background: rgba(0, 0, 0, 0.5)
+        width: 100%;
+        height: auto;
+    }
 
-        .header-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 0;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.9); /* Optional: Add a semi-transparent background */
-            border-radius: 8px;
-        }
+    .header-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background for improved contrast */
+        border-radius: 8px;
+    }
 
-        .header-content h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
+    .header-content h1 {
+        font-size: 2.5rem;
+        color: #ffffff; /* Bright text color for contrast */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+        margin-bottom: 1rem;
+    }
 
-        .header-content p {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 1.5rem;
-        }
+    .header-content p {
+        font-size: 1.2rem;
+        color: #f5f5f5; /* Slightly off-white for softer look */
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        margin-bottom: 1.5rem;
+    }
 
-        .header-content .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+    .header-content .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
 
-        .header-content .button:hover {
-            background-color: #45a049;
-        }
+    .header-content .button:hover {
+        background-color: #45a049;
+    }
 
-        /* General Section Styling */
-        section {
-            padding: 2rem 1rem;
-        }
+    /* General Section Styling */
+    section {
+        padding: 2rem 1rem;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-    </style>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+</style>
+
 </head>
 
 <body>
